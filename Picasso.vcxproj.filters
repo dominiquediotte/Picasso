@@ -47,6 +47,8 @@
       <Filter>addons\ofxGui\src</Filter>
     </ClCompile>
     <ClCompile Include="src\Application.cpp" />
+    <ClCompile Include="src\TextureApplication.cpp" />
+    <ClCompile Include="src\BaseApplication.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
@@ -388,6 +390,8 @@
       <Filter>addons\ofxGui\src</Filter>
     </ClInclude>
     <ClInclude Include="src\Application.h" />
+    <ClInclude Include="src\TextureApplication.h" />
+    <ClInclude Include="src\BaseApplication.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="icon.rc" />

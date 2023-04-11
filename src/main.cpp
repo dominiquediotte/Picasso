@@ -4,11 +4,15 @@
 
 int main()
 {
-    ofGLWindowSettings settings{};
+    ofGLFWWindowSettings settings{};
     settings.setGLVersion(3, 3);
 
     auto window = ofCreateWindow(settings);
 
-    ofRunApp(window, make_shared<Application>());
+    auto app = make_shared<Application>();
+    app->window = window;
+    app->gl = dynamic_pointer_cast<ofBaseGLRenderer>(window->renderer());
+
+    ofRunApp(window, app);
     return ofRunMainLoop();
 }
